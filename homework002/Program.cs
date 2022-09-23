@@ -35,8 +35,8 @@ void SetOutput(int[,] array)
 }
 void SearchElement(int[,] array)
 {
-    int lines = Prompt("Введите номер строки -> ");
-    int columns = Prompt("Введите номер столбца -> ");
+    var lines = Prompt("Введите номер строки -> ");
+    var columns = Prompt("Введите номер столбца -> ");
     if (lines > array.GetLength(0) || columns > array.GetLength(1)) 
     {
         System.Console.WriteLine("Такого элемента в массиве нет");
@@ -45,6 +45,6 @@ void SearchElement(int[,] array)
 }
 var lines = Prompt("Введите количество строк -> ");
 var columns = Prompt("Введите количество столбцов -> ");
-int[,] array = Array(lines, columns);
+var array = Array(lines, columns);
 SetOutput(array);
 SearchElement(array);

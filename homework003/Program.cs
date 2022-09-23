@@ -51,8 +51,8 @@ void Average(int[,] array)
     }
 }
 
-int lines = Prompt("Введите количество строк -> ");
-int columns = Prompt("Введите количество столбцов -> ");
-int[,] array = Array(lines, columns);
+var lines = Prompt("Введите количество строк -> ");
+var columns = Prompt("Введите количество столбцов -> ");
+var array = Array(lines, columns);
 SetOutput(array);
 Average(array);
